@@ -7,4 +7,4 @@ Simple program to await the calling applications PID then perform cleanup duties
 .NET 5
 
 ## Usage
-> ProgramWatchdog.exe <pid>
+> ProgramWatchdog.exe `<pid>`

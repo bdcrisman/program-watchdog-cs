@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyVersion>1.3.16.1</AssemblyVersion>
+    <FileVersion>1.3.16.1</FileVersion>
+    <Platforms>AnyCPU;x64</Platforms>
+    <AssemblyName>EyeOnHomeWatchdog</AssemblyName>
+  </PropertyGroup>
+
+</Project>

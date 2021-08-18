@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>ProgramWatchdog</AssemblyName>
+    <Version>1</Version>
+    <Authors>Benjamin Crisman</Authors>
+    <Company></Company>
+    <Description>Simple application to await the calling program's PID to exit, then perform cleanup duties.</Description>
+    <Copyright></Copyright>
+    <RootNamespace>ProgramWatchdog</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>

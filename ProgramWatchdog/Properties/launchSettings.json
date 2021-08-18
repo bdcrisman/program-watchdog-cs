@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ProgramWatchdog": {
+      "commandName": "Project",
+      "commandLineArgs": "30388 2 30 30"
+    }
+  }
+}

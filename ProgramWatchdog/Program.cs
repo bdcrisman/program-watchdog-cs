@@ -14,37 +14,18 @@ namespace ProgramWatchdog
 
         static async Task Main(string[] args)
         {
-            if (args.Length < 4)
+            if (args.Length < 1)
             {
-                Console.WriteLine($"Usage: > ProgramWatchdog.exe <pid> <loglevel> <numDaysGen> <numDaysException>");
+                Console.WriteLine($"Usage: > ProgramWatchdog.exe <pid>");
                 Environment.Exit(0);
             }
 
-            #region Parse args
+            // parse PID
             if (!int.TryParse(args[0], out int pid))
             {
                 Console.WriteLine("PID must be an integer.");
                 Environment.Exit(0);
             }
-
-            if (!int.TryParse(args[1], out int logLevel))
-            {
-                Console.WriteLine("Log-level must be an integer.");
-                Environment.Exit(0);
-            }
-
-            if (!int.TryParse(args[1], out int numDaysGen))
-            {
-                Console.WriteLine("Number-of-days-general must be an integer.");
-                Environment.Exit(0);
-            }
-
-            if (!int.TryParse(args[1], out int numDaysExc))
-            {
-                Console.WriteLine("Number-of-days-exception must be an integer.");
-                Environment.Exit(0);
-            }
-            #endregion
 
             // initialize logging
 
